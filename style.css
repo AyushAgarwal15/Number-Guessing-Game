@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  min-height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  min-height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  max-width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  padding-top: 15rem;
+  max-width: 52rem;
+  min-height: 44rem;
+  font-size: 2rem;
+}
+
+#img {
+  display: none;
+  max-width: 30rem;
+  text-align: center;
+}
+
+.number {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  padding: 3rem 4rem;
+}
+
+.btw-again {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.h1-number {
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  max-width: 25rem;
+  text-align: center;
+  /* display: block; */
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.message {
+  margin-bottom: 8rem;
+  min-height: 3rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  * {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .btw-again {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .right {
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+  .message {
+    margin-bottom: 4rem;
+  }
+
+  h1 {
+    line-height: 5rem;
+  }
+
+  .h1-number {
+    font-size: 1.5rem;
+  }
+
+  .btw-again p {
+    line-height: 2rem;
+  }
+}
